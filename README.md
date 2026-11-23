@@ -8,6 +8,6 @@ Pour arrêter les containers :
 
 ## Adresses
 
-GeoServer : 
+GeoServer : [http://localhost:8080/geoserver](http://localhost:8080/geoserver)
 
-Application Node avec OpenLayers : 
+Application Node avec OpenLayers : [http://localhost:80](http://localhost:80)
