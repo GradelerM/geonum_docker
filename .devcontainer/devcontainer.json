@@ -1,7 +1,6 @@
 {
   "name": "Cours GeoNum",
-  // "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "moby": false
