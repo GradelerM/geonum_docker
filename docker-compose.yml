@@ -7,8 +7,10 @@ services:
             - CHANGE_OWNERSHIP_ON_FOLDERS="/opt /opt/geoserver_data/ /mnt/geoserver_geodata"
             - CORS_ENABLED=true
             - SKIP_DEMO_DATA=true
-            # === Additions for Codespace ===
-            - PROXY_BASE_URL=https://${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}/geoserver
+            # === Codespaces-specific section ===
+            # Automatically uses Codespaces port 80 URL if available, otherwise falls back to localhost
+            - PROXY_BASE_URL=${CODESPACE_NAME:+https://${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}/geoserver}
+            - CATALINA_OPTS=-DGEOSERVER_CSRF_WHITELIST=${CODESPACE_NAME:-localhost}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN:-local},localhost -DGEOSERVER_CSRF_DISABLED=true
         ports:
             - "8080:8080"
         volumes:
@@ -20,5 +22,5 @@ services:
         ports:
             - "80:80"
         volumes:
-        - ./Caddyfile:/etc/caddy/Caddyfile
-        - ./app/dist/:/srv
+            - ./Caddyfile:/etc/caddy/Caddyfile
+            - ./app/dist/:/srv

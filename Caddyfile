@@ -1,4 +1,11 @@
 :80 {
-    root * /srv
-    file_server
+    handle /geoserver* {
+        reverse_proxy geoserver:8080
+    }
+
+    handle {
+        root * /srv
+        try_files {path} /index.html
+        file_server
+    }
 }
