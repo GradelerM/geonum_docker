@@ -1937,3 +1937,246 @@ GetMap Request
 24 Nov 14:46:40 CONFIG [gwc.layer] - Loaded 1 tile layers in 10.84 ms
 24 Nov 14:46:40 WARN   [support.DisposableBeanAdapter] - Custom destroy method 'destroy' on bean with name 'gwcMemoryBlobStore' threw an exception: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@ee62867[Not completed, task = org.geowebcache.storage.blobstore.memory.MemoryBlobStore$BlobStoreTask@37286772] rejected from java.util.concurrent.ThreadPoolExecutor@61e53cc0[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
 24 Nov 14:46:40 INFO   [geoserver.logging] - Beginning GeoServer cleanup sequence
+24 Nov 14:47:29 CONFIG [geoserver.logging] - Log4j 2 configuration set to DEFAULT_LOGGING.xml
+24 Nov 14:47:31 CONFIG [org.geoserver] - GeoServer configuration lock is enabled
+24 Nov 14:47:33 CONFIG [geoserver.config] - Loading catalog /opt/geoserver_data
+24 Nov 14:47:33 CONFIG [config.datadir] - Catalog and configuration loader uses 2 threads out of 2 available cores.
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded style point (parent=global)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded style polygon (parent=global)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded style raster (parent=global)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded style line (parent=global)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded style generic (parent=global)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded workspace land_matrix
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded namespace land_matrix
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded data store land_matrix_mines (parent=land_matrix)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded feature type deals, enabled (parent=land_matrix/land_matrix_mines)
+24 Nov 14:47:33 CONFIG [config.datadir] - Loaded layer deals (parent=land_matrix:deals)
+24 Nov 14:47:34 INFO   [geoserver.config] - Read Catalog in 770.4 ms: workspaces: 1, namespaces: 1, styles: 5, stores: 1, resources: 1, layers: 1, layer groups: 0.
+24 Nov 14:47:34 CONFIG [config.datadir] - Loading GeoServer config...
+24 Nov 14:47:34 CONFIG [config.datadir] - Loaded service 'WMTSInfoImpl-14965dd8:1a208e0c0d9:-7ffb', enabled
+24 Nov 14:47:34 CONFIG [config.datadir] - Loaded service 'WFSInfoImpl-14965dd8:1a208e0c0d9:-7ffa', enabled
+24 Nov 14:47:34 CONFIG [config.datadir] - Loaded service 'WMSInfoImpl-14965dd8:1a208e0c0d9:-7ff9', enabled
+24 Nov 14:47:34 CONFIG [config.datadir] - Loaded service 'WCSInfoImpl-14965dd8:1a208e0c0d9:-7ff8', enabled
+24 Nov 14:47:34 CONFIG [config.datadir] - Catalog and configuration loader uses 2 threads out of 2 available cores.
+24 Nov 14:47:34 CONFIG [config.datadir] - Loading workspace services and settings...
+24 Nov 14:47:34 CONFIG [config.datadir] - GeoServer config (settings and services) loaded in 115.7 ms
+24 Nov 14:47:34 CONFIG [gwc.config] - Will look for 'geowebcache.xml' in directory '/opt/geoserver_data/gwc'.
+24 Nov 14:47:34 WARN   [config.XMLConfiguration] - GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+24 Nov 14:47:34 WARN   [config.XMLConfiguration] - Will try to use configuration anyway. Please check the order of declared elements against the schema.
+24 Nov 14:47:34 CONFIG [config.XMLConfiguration] - Initializing GridSets from gwc
+24 Nov 14:47:34 CONFIG [config.XMLConfiguration] - Initializing layers from gwc
+24 Nov 14:47:34 CONFIG [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+24 Nov 14:47:34 CONFIG [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+24 Nov 14:47:34 CONFIG [gwc.layer] - Loading tile layers from gwc-layers
+24 Nov 14:47:34 CONFIG [gwc.layer] - Loaded 1 tile layers in 17.01 ms
+24 Nov 14:47:34 CONFIG [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+24 Nov 14:47:34 CONFIG [storage.DefaultStorageFinder] - Found system environment variable GEOSERVER_DATA_DIR set to /opt/geoserver_data/, using it as the default prefix.
+24 Nov 14:47:34 CONFIG [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+24 Nov 14:47:34 CONFIG [gwc.config] - Will look for 'geowebcache-diskquota.xml' in directory '/opt/geoserver_data/gwc'.
+24 Nov 14:47:34 CONFIG [gwc.config] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/opt/geoserver_data/gwc'.
+24 Nov 14:47:34 CONFIG [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+24 Nov 14:47:34 CONFIG [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+24 Nov 14:47:36 CONFIG [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+24 Nov 14:47:36 CONFIG [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+24 Nov 14:47:36 CONFIG [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+24 Nov 14:47:38 CONFIG [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+24 Nov 14:47:38 CONFIG [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+24 Nov 14:47:39 CONFIG [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+24 Nov 14:47:39 CONFIG [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+24 Nov 14:47:39 CONFIG [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+24 Nov 14:47:39 CONFIG [diskquota.DiskQuotaMonitor] - 1 layers attached to global quota 500.0 MB
+24 Nov 14:47:39 CONFIG [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+24 Nov 14:47:39 CONFIG [geoserver.security] - Start reloading user/groups for service named default
+24 Nov 14:47:39 CONFIG [geoserver.security] - Reloading user/groups successful for service named default
+24 Nov 14:48:33 INFO   [geoserver.security] - Strong cryptography is available
+24 Nov 14:48:47 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+24 Nov 14:48:48 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[-101.41838 : 126.1562, -46.59065 : 49.10302]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = application/openlayers
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@26c65a1e[description=<null>,label=deals,layerFeatureConstraints=<null>,layerGroupMetadata={},layerInfo=LayerInfoImpl[deals, resource:FeatureTypeInfoImpl[deals]],name=deals,remoteFeatureSource=<null>,style=<null>,type=0]]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:4326, FORMAT=application/openlayers, BBOX=-101.41838,-46.59065,126.1562,49.10302, VERSION=1.1.0, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, LAYERS=land_matrix:deals}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.0
+	ViewParams = null
+	Width = 768
+24 Nov 14:48:48 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+24 Nov 14:48:49 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[-122.6286369140625 : 147.2380119140625, -56.5348869140625 : 59.3473869140625]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@1b73fcb0[description=<null>,label=deals,layerFeatureConstraints=<null>,layerGroupMetadata={},layerInfo=LayerInfoImpl[deals, resource:FeatureTypeInfoImpl[deals]],name=deals,remoteFeatureSource=<null>,style=<null>,type=0]]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-122.6286369140625,-56.5348869140625,147.2380119140625,59.3473869140625, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=land_matrix:deals}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+24 Nov 14:50:10 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+24 Nov 14:50:10 INFO   [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:8080/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=point, WIDTH=20, SERVICE=WMS, HEIGHT=20}
+	Layers = []
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=, name= styleName=point, title=null, legendInfo=null]]
+	Locale = null
+	RawKvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=point, WIDTH=20, HEIGHT=20}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Scale = -1.0
+	Strict = false
+	Transparent = false
+	Version = 1.0.0
+	Width = 20
+	Wms = org.geoserver.wms.WMS@302699bb
+24 Nov 14:50:16 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+24 Nov 14:50:18 INFO   [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:8080/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=land_matrix:deals, WIDTH=20, SERVICE=WMS, HEIGHT=20}
+	Layers = []
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=, name= styleName=land_matrix:deals, title=null, legendInfo=null]]
+	Locale = null
+	RawKvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=land_matrix:deals, WIDTH=20, HEIGHT=20}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Scale = -1.0
+	Strict = false
+	Transparent = false
+	Version = 1.0.0
+	Width = 20
+	Wms = org.geoserver.wms.WMS@302699bb
+24 Nov 14:50:23 INFO   [gwc.layer] - Truncating default style for layer land_matrix:deals, as it changed from point to land_matrix:deals
+24 Nov 14:50:23 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:50:23 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:50:24 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver_data/gwc-layers. Created: 0, removed: 0, modified: 1
+24 Nov 14:50:28 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:50:28 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:50:29 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver_data/gwc-layers. Created: 0, removed: 0, modified: 1
+24 Nov 14:51:11 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:51:11 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:51:14 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver_data/gwc-layers. Created: 0, removed: 0, modified: 1
+24 Nov 14:51:14 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:51:14 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer land_matrix:deals
+24 Nov 14:51:19 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver_data/gwc-layers. Created: 0, removed: 0, modified: 1
+24 Nov 15:01:06 CONFIG [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+24 Nov 15:01:06 CONFIG [gwc.layer] - Loading tile layers from gwc-layers
+24 Nov 15:01:06 CONFIG [gwc.layer] - Loaded 1 tile layers in 21.75 ms
+24 Nov 15:01:06 CONFIG [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+24 Nov 15:01:06 CONFIG [gwc.layer] - Loading tile layers from gwc-layers
+24 Nov 15:01:06 CONFIG [gwc.layer] - Loaded 1 tile layers in 22.19 ms
+24 Nov 15:01:06 WARN   [support.DisposableBeanAdapter] - Custom destroy method 'destroy' on bean with name 'gwcMemoryBlobStore' threw an exception: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@4a34339[Not completed, task = org.geowebcache.storage.blobstore.memory.MemoryBlobStore$BlobStoreTask@5a01c3f4] rejected from java.util.concurrent.ThreadPoolExecutor@59ba3090[Terminated, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+24 Nov 15:01:06 INFO   [geoserver.logging] - Beginning GeoServer cleanup sequence
